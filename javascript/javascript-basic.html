@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        js & html
+    </title>
+    <style>
+        .cart {
+            background-color: yellow;
+        }
+
+        .buy {
+            background-color: orange;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Adults plain cotton t-shirt</p>
+
+    <p>Price: $ 7.99</p>
+    <button class="cart" onclick="
+        alert('added');
+        ">Add to cart</button>
+    <button class="buy" onclick="
+        console.log('loading....');
+         alert('guu kha');
+        ">Buy now</button>
+
+    <script>
+
+        let product = {
+            name: 'basketball',
+            price: 2095,
+            ['delivery-time']: '3 day'
+        };
+
+        console.log(product);
+
+        product.price += 500;
+        console.log(product.price);
+        console.log(product);
+
+        function compareprice(product1, product2) {
+
+            if (product1.price > product2.price) {
+                console.log(product2);
+            } else {
+                console.log(product1);
+            }
+        }
+
+        let product1 = {
+            name: 'basketball',
+            price: 2095
+        };
+
+        let product2 = {
+            name: 'basketball',
+            price: 2095
+        };
+
+        console.log(compareprice(product1, product2));
+
+
+
+        function isSameProduct(product3, product4) {
+
+            if (product3.name === product4.name && product3.price === product4.price) {
+                console.log('true');
+            } else {
+                console.log('false');
+            }
+        }
+
+        const product3 = { name: 'shirt', price: 1200 };
+        const product4 = { name: 'shirt', price: 1200 };
+
+        console.log(isSameProduct(product3, product4));
+
+        const greeting = "Hello WORLD!";
+        const lowercased = greeting.toLowerCase();
+        console.log(lowercased);
+
+    </script>
+</body>
+
+</html>

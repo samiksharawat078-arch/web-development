@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boolean</title>
+</head>
+
+<body>
+    <script>
+        /* let name = 'samiksha';
+         let hour = Math.random()*24 ;
+         if(hour >= 6 && hour <12){
+             console.log(`Good morning! ${name}`);
+         }else if  (hour >= 13 && hour <17) {
+             console.log(`Good afternoon! ${name}`) ;
+         } else {
+             console.log(`Good Night! ${name}`);
+         }*/
+
+        /* const isholiday = false;
+         let age = Math.random()*100;
+         if(( age <= 6 || age >= 65)&& !isholiday){
+          console.log('discount');
+         }else {
+          console.log('no discount');
+         }*/
+
+
+        let toss = Math.random();
+        let result = toss < 0.5 ? 'heads' : 'tails';
+
+        const guess = 'heads';
+        if (guess == result) {
+            console.log('You win');
+        } else {
+            console.log('You loose');
+        }
+
+
+        let message = guess === result ? 'you win' : 'you loose';
+        console.log(message);
+    </script>
+</body>
+
+</html>

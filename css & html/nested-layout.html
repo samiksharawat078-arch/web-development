@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        nested layout
+    </title>
+
+    <style>
+        p{
+            margin-top: 0px;
+            margin-bottom: 0px ;
+        }
+        .pfp {
+
+            width: 100px;
+            border-radius: px;
+            display: inline-block;
+            padding-top: 20px;
+        }
+
+        .pfp1 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+
+        .name {
+            font-family: arial;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .mutual {
+            color: gray;
+            padding-left: 5px;
+        }
+
+        .buton {
+            background-color: rgb(7, 123, 190);
+            color: white;
+            border: none;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            margin-left: 5px;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .buton:HOVER {
+            opacity: 0.7;
+        }
+
+        .buton:active {
+            background-color: green;
+        }
+
+        .pfp-content {
+            width: 90px;
+            display: inline-block;
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        .profile {
+            height: 150px;
+            width: 340px;
+            display: block;
+            margin-left: 10px;
+        }
+
+        .add-button {
+            display: inline-block;
+            vertical-align: 33px;
+        }
+
+        .thumbnail1 {
+            width: 540px;
+            height: 150px;
+            display: inline-block;
+        }
+
+        .thum1 {
+            width: 250px;
+            display: inline-block;
+        }
+
+        .th-1-img {
+            height: 150px;
+            width: 250px;
+            display: inline-block;
+        }
+
+        .th-1-dis {
+            display: inline-block;
+            width: 250px;
+            vertical-align: top;
+           
+        }
+
+        .vid-title {
+            font-family: Roboto, ARIAL;
+            font-size: 18px;
+            font-weight: 500;
+            padding-bottom: 18px;
+            padding-top: 10px;
+        }
+        .vid-dis{
+            color: rgb(122, 121, 121);
+             line-height: 20px;
+
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <P>
+    <H1>PROFILES :</H1>
+    </P>
+    <div class="profile">
+
+        <div class="pfp">
+            <img class="pfp1" src="pfp/snow-covered-mountain-cloudy-sky-daytime_414077-62.avif" alt="">
+        </div>
+        <div class="pfp-content">
+            <p class="name">RONICA</p>
+            <P class="mutual">4 MUTUAL FRIENDS</P>
+        </div>
+        <div class="add-button">
+            <button class="buton">Add Friend </button>
+        </div>
+
+    </div>
+    <div class="profile">
+
+        <div class="pfp">
+            <img class="pfp1" src="pfp/61-3752-20325.webp" alt="">
+        </div>
+        <div class="pfp-content">
+            <p class="name">OLIVIA</p>
+            <P class="mutual">3 MUTUAL FRIENDS</P>
+        </div>
+        <div class="add-button">
+            <button class="buton">Add Friend </button>
+        </div>
+
+    </div>
+    <div class="profile">
+
+        <div class="pfp">
+            <img class="pfp1" src="pfp/download.jpg" alt="">
+        </div>
+        <div class="pfp-content">
+            <p class="name">SABRINA</p>
+            <P class="mutual">2 MUTUAL FRIENDS</P>
+        </div>
+        <div class="add-button">
+            <button class="buton">Add Friend </button>
+        </div>
+
+    </div>
+
+    <P>
+    <H1>THUMBNAILS: </H1>
+    </P>
+    <div class="thumbnail1">
+        <div class="thum1">
+            <img class="th-1-img" src="thumbnails/th-1.avif" alt="">
+        </div>
+        <div class="th-1-dis">
+            <p class="vid-title">
+                LIVING IN THE TRADITIONAL KOREAN HOUSE *hanok*
+            </p>
+              <p class="vid-dis">
+             
+                Pooh in Korea
+            </p>
+            <p class="vid-dis">
+                500k views . 2 days ago
+            </p>
+       
+        </div>
+    </div>
+</body>
+
+</html>

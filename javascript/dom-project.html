@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> amazon shipping calculator</title>
+</head>
+
+<body>
+    <input type="number" placeholder="cost of product" class="js-input" onkeydown="
+    handlingTheCost(event);
+    ">
+    <button onclick="
+   productCost();
+    ">calculate</button>
+
+    <p class="js-total"> </p>
+
+    <p class="js-error" style="color: red;"></p>
+
+
+    <input class="js-input2" type="text" placeholder="Type something" onkeyup="
+     const inputElement2 = document.querySelector('.js-input2');
+
+    document.querySelector('.js-display')
+    .innerHTML = inputElement2.value;
+    
+    ">
+
+    <p class="js-display"></p>
+    <script>
+        function handlingTheCost(event) {
+            if (event.key === 'Enter') {
+                productCost();
+            }
+        }
+
+
+
+        function productCost() {
+
+            const inputElement = document.querySelector('.js-input');
+            let cost = Number(inputElement.value) * 100;
+            document.querySelector('.js-error').innerHTML = '';
+            document.querySelector('.js-total').innerHTML = '';
+
+            if (cost < 0) {
+                document.querySelector('.js-error').innerHTML = 'Error :cost can not be less than $0'
+
+                return;
+            }
+
+
+            if (cost < 4000) {
+                cost = cost + 1000;
+            }
+            document.querySelector('.js-total')
+                .innerHTML = `total cost is : $${cost / 100}`;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>flex box : challenge</title>
+
+
+    <style>
+        p {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .pfp {
+
+            width: 100px;
+            border-radius: px;
+            display: inline-block;
+            padding-top: 20px;
+        }
+
+        .pfp1 {
+            height: 100px;
+            width: 100px;
+            border-radius: 50px;
+        }
+
+        .name {
+            font-family: arial;
+            font-weight: bold;
+            padding-left: 5px;
+        }
+
+        .mutual {
+            color: gray;
+            padding-left: 5px;
+        }
+
+        .buton {
+            background-color: rgb(7, 123, 190);
+            color: white;
+            border: none;
+            padding-bottom: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            padding-top: 10px;
+            margin-left: 5px;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .buton:HOVER {
+            opacity: 0.7;
+        }
+
+        .buton:active {
+            background-color: green;
+        }
+
+        .pfp-content {
+            width: 90px;
+            display: inline-block;
+            text-align: left;
+            padding-top: 20px;
+        }
+
+        .profile {
+            height: 150px;
+            width: 340px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-left: 10px;
+        }
+
+        .add-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div style=" 
+       padding-top: 10px;
+        border: 1px solid gray;
+        border-radius: 4px;
+        height: 67px;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        ">
+
+        <div style=" 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+        ">
+            <div style="
+                 font-family: arial;
+                font-size: 12px;
+                 font-weight: bold;
+
+            ">
+                Home
+            </div>
+
+
+            <div>
+                <button style="
+                 border: none;
+                 border-radius: 8px;
+                 padding-left:8px  ;
+                 padding-right: 8px;
+                 color: white;
+                 background-color: rgb(28, 151, 223);">
+                    14
+                </button>
+            </div>
+
+        </div>
+
+        <div style=" 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        ">
+            <div style="
+                 font-family: arial;
+                font-size: 12px;
+                 font-weight: bold;
+                 padding-top: 5px;
+            ">
+                Notification
+            </div>
+
+
+            <div>
+                <button style="
+                 border: none;
+                 border-radius: 8px;
+                 padding-left:8px  ;
+                 padding-right: 8px;
+                 color: white;
+                 margin-top: 5px;
+                 background-color: rgb(28, 151, 223);">
+                    3
+                </button>
+            </div>
+
+        </div>
+        <div style=" 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 5px;
+        ">
+            <div style="
+                 font-family: arial;
+                font-size: 12px;
+                 font-weight: bold;
+
+            ">
+                Messages
+            </div>
+
+
+            <div>
+                <button style="
+                 border: none;
+                 border-radius: 8px;
+                 padding-left:8px  ;
+                 padding-right: 8px;
+                 color: white;
+                 background-color: rgb(28, 151, 223);">
+                    20
+                </button>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div
+    style="display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+    border: 1px solid purple;
+    height: 40px;
+    background-color: rgba(100, 27, 148, 0.733);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+   flex: 1;
+
+    
+    "
+    >
+        <div>Home</div>
+        <div>
+            <input style="width: 400px;
+            display: flex;
+            border-radius: 8px;
+            flex: 1;
+            border: 1px solid white
+            ;" 
+            type="text" placeholder="Search">
+        </div>
+        <div>
+            <button
+            style=" 
+            display: flex;
+            flex: 1;
+            border: 1px solid white;
+            background-color: rgba(100, 27, 148, 0.733);
+            color: white;
+            height: 28px;
+            border-radius: 4px;
+            padding-top: 5px;
+            "
+            >Download</button>
+        </div>
+       
+    </div>
+</body>
+
+</html>

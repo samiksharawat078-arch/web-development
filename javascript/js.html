@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <style>
+
+      .button{
+            background-color: red;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 15px;
+            font-size: 15px;
+            cursor: pointer;
+
+        }
+
+        .button.is-toggled{
+            background-color: black;
+            color: white;
+        }
+
+
+
+    </style>
+</head>
+<body>
+   <button class="button js-button" onclick="toggleButton(this)">gaming</button>
+    <button class="button js-button" onclick="toggleButton(this)">music</button>
+    <button class="button js-button" onclick="toggleButton(this)">tech</button>
+
+    <script>
+    function toggleButton(button) {
+        // 2. Modified the function to take the element directly instead of a selector
+        if (!button.classList.contains('is-toggled')) {
+            turnoffthepreviousbutton();
+            button.classList.add('is-toggled');
+        } else {
+            button.classList.remove('is-toggled');
+        }
+    }
+
+    function turnoffthepreviousbutton() {
+        // 3. Fixed spelling typo ('trunoffthepreviousbutton') and added missing '.' for class selector
+        const previousButton = document.querySelector('.is-toggled');
+
+        if (previousButton) {
+            previousButton.classList.remove('is-toggled');
+        }
+    }
+
+   </script>
+</body>
+</html>

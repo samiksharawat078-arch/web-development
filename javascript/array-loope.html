@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>yes please</button>
+    <script>
+
+        let array = [10, 20, 30];
+        console.log(array);
+
+        array.splice(2, 1);
+        console.log(array);
+
+        array.push(99);
+        console.log(array);
+
+        function getLastValue(array) {
+            let lastindex = array.length - 1;
+            return array[lastindex];
+        }
+
+        console.log(getLastValue([12, 43, 56, 8, 7, 89]));
+        console.log(getLastValue(['hello', 'hey', 'i', 'like', 'you']));
+
+
+        function arrayswap(array) {
+            const lastindex = array.length - 1;
+
+            const firstvalue = array[0];
+            const lastvalue = array[lastindex];
+
+            array[lastindex] = firstvalue;
+            array[0] = lastvalue;
+
+            return array;
+        }
+
+        console.log(arrayswap([12, 43, 56, 8, 7, 89]));
+        console.log(arrayswap(['hello', 'hey', 'i', 'like', 'you']));
+
+
+        let numbers = [1,2,3,4,5,6,7,8,9,10];
+        for(let i =0 ; i < numbers.length; i++){
+            numbers += 2;        
+        }
+
+        console.log(numbers);
+
+    </script>
+</body>
+
+</html>

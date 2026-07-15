@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>amazon</title>
+</head>
+
+<body>
+
+    <button class="js-cart" onclick="
+      cartdisplay();
+        ">
+        cartQuantity
+    </button>
+    <button onclick="
+    
+    
+    if(cartQuantity == limit){
+            alert('cart is full');
+            cartQuantity = Math.min(cartQuantity+1,limit);
+        } else{
+            cartQuantity = cartQuantity + 1;
+            console.log(cartQuantity);
+        }
+
+         cartdisplay();
+    ">
+        Add to cart
+    </button>
+
+
+    <button onclick="
+    cartQuantity = cartQuantity + 2;
+   
+    if(cartQuantity >= 10){
+         cartQuantity = Math.min(cartQuantity+2,limit);
+         alert('cart is full');
+         
+        } else{
+            cartQuantity = cartQuantity + 2;
+            console.log(cartQuantity);
+        }
+
+         cartdisplay();
+    ">
+        +2
+    </button>
+
+
+    <button onclick="
+     
+     if(cartQuantity >= 10){
+            cartQuantity = Math.min(cartQuantity+3,limit);
+             alert('cart is full');
+        } else{
+            cartQuantity = cartQuantity + 3;
+            console.log(cartQuantity);
+        }
+         cartdisplay();
+    ">
+        +3
+    </button>
+
+
+    <button onclick="
+   
+    if(cartQuantity  >= 10){
+            alert('cart is full');
+            cartQuantity = Math.min(cartQuantity+4,limit);
+        } else{
+            cartQuantity = cartQuantity + 4;
+            console.log(cartQuantity);
+        }
+          cartdisplay();
+    ">
+        +4
+    </button>
+
+
+    <button onclick="
+   
+    if(cartQuantity >= 10){
+         
+    cartQuantity = Math.min(cartQuantity+2,limit);
+            alert('cart is full');
+           
+        } else{
+            cartQuantity = cartQuantity + 5;
+            console.log(cartQuantity);
+        }
+         cartdisplay();
+    ">
+        +5
+    </button>
+
+
+    <button onclick="
+
+    if(cartQuantity < 1){
+        alert('Not enough items');
+        cartQuantity = Math.min(cartQuantity,limit2)
+    } else {
+        cartQuantity = cartQuantity - 1;
+        console.log(cartQuantity)
+    }
+    cartdisplay();
+    ">
+        Remove from cart
+    </button>
+
+    <button onclick="
+   /* cartQuantity --;
+    cartQuantity --;
+    console.log(`cartQuantity: ${cartQuantity}`); */
+    
+    if(cartQuantity < 1){
+        alert('Not enough items');
+        cartQuantity = Math.min(cartQuantity,limit2)
+    } else {
+        cartQuantity = cartQuantity - 2;
+        console.log(cartQuantity)
+    }
+     cartdisplay();
+    ">
+        -2
+    </button>
+
+    <button onclick="
+   /* cartQuantity = cartQuantity -=3 ;
+     console.log(`cartQuantity: ${cartQuantity}`);*/
+     
+    if(cartQuantity < 1){
+        alert('Not enough items');
+        cartQuantity = Math.min(cartQuantity,limit2)
+    } else {
+        cartQuantity = cartQuantity - 3;
+        console.log(cartQuantity)
+    }
+      cartdisplay();
+    ">
+        -3
+    </button>
+
+
+    <p class="display-cart"> </p>
+
+
+
+
+    <script>
+        let cartQuantity = 0;
+
+        let limit = 10;
+
+        let limit2 = 0;
+
+
+        function cartdisplay() {
+            let purchase = document.querySelector('.js-cart');
+            document.querySelector('.display-cart')
+            .innerHTML = ` cartQuantity: ${cartQuantity}`;
+        }
+
+
+
+        /*  let name = 'samiksha';
+          console.log(`My name is: ${name}`);
+  
+  
+          let cost = 5 + 3 * 2 + 9;
+          console.log(`Cost of food:$${cost}`);
+  
+          let tax = cost * 0.1;
+          console.log(`tax:$${tax}`);
+  
+          let totalCost = cost + tax;
+          console.log(`totalcost:$${totalCost}`);
+  */
+
+
+    </script>
+</body>
+
+</html>
