@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <p>
+   <p><input class="display-calsi" type="text" placeholder=""></p>
+   <BUTTon class="number" onclick="
+     calculation += '1';
+       calculate();
+        ">1</BUTTon>
+
+   <button class="number" onclick="
+     calculation += '2';
+         calculate();
+        ">2</button>
+   <button class="number" onclick="
+     calculation += '3';
+        calculate();
+        ">3</button>
+   <button class="oprators" onclick="
+     calculation += ' + ';
+        calculate();
+        ">+</button>
+   </p>
+   <p>
+      <BUTTon class="number" onclick="
+     calculation += '4';
+         calculate();
+        ">4</BUTTon>
+
+      <button class="number" onclick="
+     calculation += '5';
+        calculate();
+        ">5</button>
+      <button class="number" onclick="
+     calculation += '6';
+        calculate();
+        ">6</button>
+      <button class="oprators" onclick="
+     calculation += ' - ';
+        calculate();
+        ">-</button>
+   </p>
+   <p>
+      <BUTTon class="number" onclick="
+     calculation += '7';
+         calculate();
+        ">7</BUTTon>
+
+      <button class="number" onclick="
+     calculation += '8';
+         calculate();
+        ">8</button>
+      <button class="number" onclick="
+     calculation += '9';
+         calculate();
+         ">9</button>
+
+         <button class="oprators" onclick="
+         calculation += '*'"
+         >*</button>
+
+     
+   </p>
+
+   <p>
+      <button class="number" onclick="
+         calculation +='0' ;
+         calculate() ;
+         ">0</button>
+
+         <button class="number" onclick="
+         calculation +='.'
+         calculate();
+         ">.</button>
+
+          <button class="number" onclick="
+    calculation = eval(calculation);
+         calculate();
+        ">=</button>
+
+        <button class="oprators" onclick="
+         calculation +='/'
+         calculate();
+         ">/</button>
+
+
+   </p>
+   <p>
+      <button style=" color: white;
+         background-color: gray;
+         height: 40px;
+         width: 40px;
+         border: 1px solid gray;
+         padding: 0px;
+         border-radius: 25px;" onclick="
+    calculation = '';
+        calculate();
+        ">Clear</button>
+   </p>
+
+
+
+   <script src="script.js">
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+ .display-calsi {
+         width: 150px;
+         height: 40px;
+         color: white;
+         background-color: black;
+         border: none;
+         font-size: 25px;
+         font-weight: bold;
+      
+      }
+
+      body{
+         background-color: black;
+      }
+      .number{
+         font-size: 18px;
+         color: white;
+         background-color: gray;
+         height: 35px;
+         width: 35px;
+         border: 1px solid gray;
+         border-radius: 18px;
+      }
+
+      .oprators{
+         font-size: 18px;
+         color: white;
+         background-color: orange;
+         height: 35px;
+         width: 35px;
+         border: 1px solid gray;
+         border-radius: 18px;
+      }
